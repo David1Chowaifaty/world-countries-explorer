@@ -3,6 +3,7 @@
 Welcome to the World Countries Explorer! This website allows you to explore countries from around the world, grouped by continent. You can view each country's flag, capital, and language.
 
 ## Table of Contents
+
 - [Features](#features)
 - [Installation](#installation)
 
@@ -19,10 +20,10 @@ Welcome to the World Countries Explorer! This website allows you to explore coun
 
    ```bash
    git clone https://github.com/David1Chowaifaty/world-countries-explorer.git
+   ```
 
 2. Navigate to the project directory:
 
-  ```bash
-  cd world-countries-explorer
-
-
+   ```bash
+   cd world-countries-explorer
+   ```
