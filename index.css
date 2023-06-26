@@ -1,0 +1,168 @@
+/* Default styles */
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: #1e293b;
+  overflow: hidden;
+}
+
+.continent-container {
+  padding: 20px;
+}
+
+.continent-container h1 {
+  margin-left: 35px;
+  margin-bottom: 30px;
+}
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2em;
+  justify-content: space-evenly;
+}
+
+.card {
+  box-shadow: 10px 5px 15px #6366f117;
+  padding: 15px;
+  border-radius: 10px;
+  height: 200px;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card img {
+  object-fit: scale-down;
+  width: 180px;
+  height: 150px;
+}
+
+.card p {
+  text-align: center;
+  font-size: 1.2em;
+}
+
+.card:hover {
+  transform: scale(1.02);
+  cursor: pointer;
+  transition: all 2ms ease-in-out;
+  box-shadow: 10px 5px 15px #6365f137;
+}
+
+.dialog {
+  position: fixed;
+  z-index: 50;
+  height: 100vh;
+  background: #00000044;
+  inset: 0;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.inner-dialog {
+  background: white;
+  border-radius: 10px;
+  width: 30vw;
+  padding: 20px;
+  box-shadow: 10px 5px 15px #00000037;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.inner-dialog button {
+  background: #6366f1;
+  border: none;
+  border-radius: 20px;
+  height: 50px;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  margin-top: 20px;
+}
+
+.inner-dialog button:hover {
+  background: #6365f1da;
+}
+
+.inner-dialog button:active {
+  transform: scale(0.95);
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.container img {
+  width: 40px;
+  height: 20px;
+}
+
+/* Media queries for responsive design */
+
+/* Mobile */
+@media (max-width: 680px) {
+  .continent-container {
+    padding: 10px;
+  }
+
+  .continent-container h1 {
+    margin-left: 15px;
+    margin-bottom: 20px;
+  }
+
+  .cards-container {
+    justify-content: center;
+  }
+
+  .card {
+    height: 300px;
+    width: 300px;
+  }
+
+  .card img {
+    width: 130px;
+    height: 100px;
+  }
+
+  .inner-dialog {
+    width: 80vw;
+  }
+}
+
+/* iPad */
+@media (min-width: 481px) and (max-width: 1024px) {
+  .continent-container {
+    padding: 15px;
+  }
+
+  .continent-container h1 {
+    margin-left: 25px;
+    margin-bottom: 25px;
+  }
+
+  .cards-container {
+    justify-content: center;
+  }
+
+  .card {
+    height: 180px;
+    width: 180px;
+  }
+
+  .card img {
+    width: 160px;
+    height: 130px;
+  }
+
+  .inner-dialog {
+    width: 50vw;
+  }
+}

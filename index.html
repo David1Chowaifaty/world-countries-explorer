@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Countries</title>
+    <link rel="preconnet" href="httpls://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+
+  <body>
+    <div class="dialog" id="dialog">
+      <div class="inner-dialog">
+        <div class="container">
+          <img id="flag" />
+          <h1 id="title"></h1>
+        </div>
+        <p><b>Capital: </b><span id="capital"></span></p>
+        <p><b>Languages: </b><span id="language"></span></p>
+        <button onclick="closeDialog()">Cancel</button>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
